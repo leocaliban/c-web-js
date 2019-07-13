@@ -1,0 +1,1 @@
+this.c = 'INDEX DO MÓDULO C';

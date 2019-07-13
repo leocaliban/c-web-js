@@ -1,0 +1,1 @@
+this.go = 'YOU ROCK!!!';
