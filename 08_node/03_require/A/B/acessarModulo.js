@@ -17,6 +17,6 @@ http.createServer((requests, response) => {
 /**
  * Acessando módulos pelo index
  */
-const c = require('../../C');
+const c = require('./C');
 
 console.log(c.c);
