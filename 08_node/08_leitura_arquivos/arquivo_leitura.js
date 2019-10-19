@@ -15,4 +15,4 @@ fs.readFile(caminho, 'utf-8', (error, conteudo) => {
 fs.readdir(__dirname, (error, arquivos) => {
     console.log('Conteúdo da pasta...');
     console.log(arquivos);
-})
+});
