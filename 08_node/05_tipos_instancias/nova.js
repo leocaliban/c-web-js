@@ -1,5 +1,5 @@
 /**
- * Factory que retorna um noo objeto
+ * Factory que retorna um novo objeto com uma função factory
  */
 module.exports = () => {
     return {
