@@ -9,4 +9,4 @@ function falarDepoisDe(segundos, frase) {
 falarDepoisDe(2, 'Funcionou')
     .then(frase => frase.concat('!'))
     .then(outraFrase => console.log(outraFrase))
-    .catch(e => console.log(e));
+    .catch(e => console.log(e)); // Captura o reject
