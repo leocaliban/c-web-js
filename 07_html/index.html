@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercícios HTML</title>
+    <meta name="description" content="Exercícios HTML" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="#" />
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios HTML</h1>
+
+    </header>
+
+    <nav>
+        <a href i-nav="exercicios/01_listas_aninhadas.html">Listas Aninhadas</a> |
+    </nav>
+
+    <section id="content">
+
+    </section>
+
+    <footer>
+        Curso HTML
+    </footer>
+
+    <script>
+        document.querySelectorAll('[i-nav]').forEach(link => {
+            const content = document.getElementById('content');
+
+            link.onclick = function (event) {
+                event.preventDefault();
+
+                fetch(link.getAttribute('i-nav'))
+                    .then(response => response.text())
+                    .then(html => content.innerHTML = html);
+            }
+        })
+    </script>
+
+</body>
+
+</html>
